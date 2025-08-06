@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="using:Win32MsgBoxDemo.Views"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="Win32MsgBoxDemo.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        SizeToContent="WidthAndHeight"
+        Title="Message Box Test">
+
+    <Design.DataContext>
+        <v:MainWindow/>
+    </Design.DataContext>
+
+	<Window.Styles>
+		<Style Selector="Button">
+			<Setter Property="Margin" Value="10"/>
+			<Setter Property="Width" Value="120"/>
+			<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		</Style>
+	</Window.Styles>
+
+	<StackPanel Orientation="Vertical" Margin="10">
+		<Label Content="Message Box Demo" FontWeight="SemiBold" FontSize="18"/>
+
+		<Grid Margin="0,20" ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
+
+			<Button Grid.Row="0" Grid.Column="0" Content="Error" Name="ErrorBtn"/>
+			<Button Grid.Row="0" Grid.Column="1" Content="Warning" Name="WarningBtn"/>
+			<Button Grid.Row="0" Grid.Column="2" Content="Info" Name="InfoBtn"/>
+
+			<Button Grid.Row="1" Grid.Column="0" Content="Yes/No" Name="YesNoBtn"/>
+			<Button Grid.Row="1" Grid.Column="1" Content="Yes/No/Cancel" Name="YesNoCancelBtn"/>
+			<Button Grid.Row="1" Grid.Column="2" Content="Retry" Name="RetryBtn"/>
+
+			<Button Grid.Row="2" Grid.Column="0" Content="Retry/Continue" Name="RetryContinueBtn"/>
+			<Button Grid.Row="2" Grid.Column="1" Content="Abort/Retry/Ignore" Name="AbortRetryBtn"/>
+
+		</Grid>
+	</StackPanel>
+
+</Window>

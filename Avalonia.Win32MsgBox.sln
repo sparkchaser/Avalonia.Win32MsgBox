@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Win32MsgBox", "Avalonia.Win32MsgBox\Avalonia.Win32MsgBox.csproj", "{9EC84460-D88E-4F60-A08C-99BE2EA97AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win32MsgBoxDemo", "Win32MsgBoxDemo\Win32MsgBoxDemo.csproj", "{BA8B180F-9956-4051-AE83-D97C60B4952B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9EC84460-D88E-4F60-A08C-99BE2EA97AF0} = {9EC84460-D88E-4F60-A08C-99BE2EA97AF0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EC84460-D88E-4F60-A08C-99BE2EA97AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC84460-D88E-4F60-A08C-99BE2EA97AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC84460-D88E-4F60-A08C-99BE2EA97AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC84460-D88E-4F60-A08C-99BE2EA97AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8B180F-9956-4051-AE83-D97C60B4952B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8B180F-9956-4051-AE83-D97C60B4952B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8B180F-9956-4051-AE83-D97C60B4952B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8B180F-9956-4051-AE83-D97C60B4952B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48701EFA-EA89-4E18-97F8-5852CA06E104}
+	EndGlobalSection
+EndGlobal
